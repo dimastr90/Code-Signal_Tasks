@@ -36,7 +36,7 @@ function firstNotRepeatingCharacter(s) {
     let set = new Set();
 
     for(let i=0; i<s.length; i++){
-        index=s.indexOf(s[i],i+1);
+        let index=s.indexOf(s[i],i+1);
         if(index!==-1){
            set.add(s[index]);
            }else if(!set.has(s[i])){
